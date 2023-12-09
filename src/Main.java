@@ -10,8 +10,13 @@ public class Main {
                 new Number(3),
                 new Product(new Number(2),new Modulo(new Number(11), new Number(2)))
         );
-        System.out.println("Result of "+ exp.toString()+" : " + exp.evaluate());
-        System.out.println("Result of "+ modulo_exp.toString()+" : " + modulo_exp.evaluate());
+        ArithmeticExp division_exp = new Sum(
+                new Number(3),
+                new Product(new Number(2),new Divison(new Number(11), new Number(2)))
+        );
+        System.out.println("Result of expression "+ exp.toString()+ " is : " + exp.evaluate());
+        System.out.println("Result of expression "+ modulo_exp.toString()+ " is : " + modulo_exp.evaluate());
+        System.out.println("Result of expression "+ division_exp.toString()+ " is : " + division_exp.evaluate());
 
     }
 }

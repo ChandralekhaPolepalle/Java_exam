@@ -8,5 +8,6 @@ abstract public class Binary extends ArithmeticExp {
             this.right = right;
     }
 
+
 }
 
