@@ -6,6 +6,6 @@ public class Sum extends Binary {
 
     @Override
     public int evaluate() {
-        return 0;
+        return left.evaluate() + right.evaluate();
     }
 }
